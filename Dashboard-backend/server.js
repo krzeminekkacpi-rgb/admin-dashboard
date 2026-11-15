@@ -104,18 +104,18 @@ const OPEN_METEO_URL = 'https://api.open-meteo.com/v1/forecast';
 const weatherCache = new Map();
 const WEATHER_TTL_MS = 30 * 60 * 1000; // 30 minut
 
-async function fetchOpenMeteo(params) {
-    const key = JSON.stringify(params);
+async function cachedGet(url, config = {}) {
+    const key = url + JSON.stringify(config.params || {});
     const hit = weatherCache.get(key);
     if (hit && Date.now() - hit.timestamp < WEATHER_TTL_MS) {
-        return hit.data;
+        return { data: hit.data };
     }
     try {
-        const response = await cachedGet(OPEN_METEO_URL, { params, timeout: 10000 });
+        const response = await axios.get(url, { timeout: 10000, ...config });
         weatherCache.set(key, { data: response.data, timestamp: Date.now() });
-        return response.data;
+        return response;
     } catch (error) {
-        if (hit) return hit.data;
+        if (hit) return { data: hit.data };
         throw error;
     }
 }
