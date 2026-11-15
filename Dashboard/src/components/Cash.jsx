@@ -77,7 +77,7 @@ export function Cash({ hidden, setHidden }) {
         }
 
         if (cashData.length > 1) {
-            if (Number(cashData.at(-2).Kasa) > Number(cashData.at(-1).Kasa)) {
+            if (Number(cashData.at(-2)?.Kasa) > Number(cashData.at(-1).Kasa)) {
                 setTotalSpendings((spend) => [...spend, {
                     Time: String([keyDateType]),
                     Wydane: Number([equationKey])

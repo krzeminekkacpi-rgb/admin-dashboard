@@ -101,6 +101,25 @@ const WARSZAWA_LAT = 52.2297;
 const WARSZAWA_LON = 21.0122;
 const OPEN_METEO_URL = 'https://api.open-meteo.com/v1/forecast';
 
+const weatherCache = new Map();
+const WEATHER_TTL_MS = 30 * 60 * 1000; // 30 minut
+
+async function fetchOpenMeteo(params) {
+    const key = JSON.stringify(params);
+    const hit = weatherCache.get(key);
+    if (hit && Date.now() - hit.timestamp < WEATHER_TTL_MS) {
+        return hit.data;
+    }
+    try {
+        const response = await axios.cachedGet(OPEN_METEO_URL, { params, timeout: 10000 });
+        weatherCache.set(key, { data: response.data, timestamp: Date.now() });
+        return response.data;
+    } catch (error) {
+        if (hit) return hit.data;
+        throw error;
+    }
+}
+
 // Mapowanie kodów pogodowych WMO (używanych przez Open-Meteo) na czytelne opisy PL
 /*
 function opisPogody(code) {
@@ -145,7 +164,7 @@ app.get('/api/weather/warszawa/today', async (req, res) => {
     }
 
     try {
-        const response = await axios.get(OPEN_METEO_URL, {
+        const response = await axios.cachedGet(OPEN_METEO_URL, {
             params: {
                 latitude: WARSZAWA_LAT,
                 longitude: WARSZAWA_LON,
