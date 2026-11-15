@@ -37,7 +37,7 @@ app.get('/api/synop', async (req, res) => {
     }
 
     try {
-        const response = await axios.get(IMGW_BASE_URL, { timeout: 7000 });
+        const response = await cachedGet(IMGW_BASE_URL, { timeout: 7000 });
         setCache(cacheKey, response.data);
         res.json(response.data);
     } catch (error) {
@@ -111,7 +111,7 @@ async function fetchOpenMeteo(params) {
         return hit.data;
     }
     try {
-        const response = await axios.cachedGet(OPEN_METEO_URL, { params, timeout: 10000 });
+        const response = await cachedGet(OPEN_METEO_URL, { params, timeout: 10000 });
         weatherCache.set(key, { data: response.data, timestamp: Date.now() });
         return response.data;
     } catch (error) {
@@ -164,7 +164,7 @@ app.get('/api/weather/warszawa/today', async (req, res) => {
     }
 
     try {
-        const response = await axios.cachedGet(OPEN_METEO_URL, {
+        const response = await cachedGet(OPEN_METEO_URL, {
             params: {
                 latitude: WARSZAWA_LAT,
                 longitude: WARSZAWA_LON,
@@ -207,7 +207,7 @@ app.get('/api/weather/warszawa/week', async (req, res) => {
     }
 
     try {
-        const response = await axios.get(OPEN_METEO_URL, {
+        const response = await cachedGet(OPEN_METEO_URL, {
             params: {
                 latitude: WARSZAWA_LAT,
                 longitude: WARSZAWA_LON,
