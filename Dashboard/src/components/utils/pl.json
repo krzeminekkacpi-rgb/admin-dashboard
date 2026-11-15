@@ -1,0 +1,90 @@
+{
+      "Dashboard": {
+        "CurrentLang": "PL",
+        "WelcomeMessage": "Witaj ponownie",
+        "ButtonDaily": "Dzienny",
+        "ButtonWeekly": "Tydzień",
+        "Weekdays": "pl-PL",
+        "MarketChanges": "Zmiany rynkowe z dziś",
+        "MarketGold": "Złoto",
+        "MarketSilver": "Srebro",
+        "MarketOil": "Ropa",
+        "SeeOtherProjects": "Zobacz moje inne projekty!",
+        "MaybeStar": "Tu możesz zobaczyć moje inne projekty, jeżeli ci sie podobają daj gwiazdkę",
+        "Spotify": "Kopia"
+      },
+      "Calendar": {
+        "Name": "Kalendarz",
+        "FirstDescription": "Aby dodać wydarzenie kliknij na dzień lub dzień tygodnia słownie.",
+        "AddEvent": "Dodaj wydarzenie",
+        "AddWeeklyEvent": "Dodaj Wydarzenie Tygodniowe",
+        "EventName": "Nazwa wydarzenia",
+        "SelectOption": "Wybierz opcje",
+        "AddBtn": "Dodaj",
+        "RemoveBtn": "Usuń",
+        "Events": "Wydarzenia",
+        "NoEvents": "Aktualnie brak wydarzeń.",
+        "WeeklyEvents": "Wydarzenia Tygodniowe",
+        "SecondDescription": "Wydarzenia tygodniowe są powtarzane co tydzień.",
+        "Monday": "Poniedziałek",
+        "Monday-short": "Pn",
+        "Tuesday": "Wtorek",
+        "Tuesday-short": "Wt",
+        "Wednesday": "Środa",
+        "Wednesday-short": "Śr",
+        "Thursday": "Czwartek",
+        "Thursday-short": "Czw",
+        "Friday": "Piątek",
+        "Friday-short": "Pt",
+        "Saturday": "Sobota",
+        "Saturday-short": "Sb",
+        "Sunday": "Niedziela",
+        "Sunday-short": "Ndz"
+      }, 
+      "Calculator": {
+        "Name": "Kalkulator"
+      },
+      "Notepad": {
+        "Name": "Notatnik"
+      },
+      "Cash": {
+        "Name": "Kasa",
+        "AddingDescription": "Dodawanie Kasa, dodaj kilka wartości a wykres sie wypełni.",
+        "AfterYear": "Po roku",
+        "After3Years": "3 Lata",
+        "After5Years": "5 Lat",
+        "After10Years": "10 Lat",
+        "After25Years": "25 Lat",
+        "After50Years": "50 Lat",
+        "LastSpendings": "Ostatnie wydatki",
+        "AddingSpendings": "Dodawanie wydatków manualne.",
+        "ChangeBtn": "Zmień",
+        "Savings": "Osiągaj cele finansowe!",
+        "ReachGoal": "Cel Brawo!",
+        "Goal": "Cel:",
+        "Saved": "Odłożone:",
+        "Percent": "Twojego celu",
+        "Edit-savings": "Edytuj oszczędności.",
+        "Add-savings": "Dodaj oszczędności."
+      },
+      "Charts": {
+        "Name": "Wykresy",
+        "Today": "Dziś"
+      },
+      "Settings": {
+        "MainSettings": "Ustawiania główne",
+        "SideSettings": "Ustawienia poboczne",
+        "Name": "Ustawienia",
+        "PageLanguage": "Język strony:",
+        "HideMarketChanges": "Ukryj zmiany rynkowe:",
+        "UnlockCharts": "Odblokuj wykresy:",
+        "PageFont": "Font strony:",
+        "HideScrollBar": "Ukryj scrollbary:",
+        "PageOperator": "Operator strony:",
+        "Copyright": "© 2026 Kacper Krzemiński. Wszelkie prawa zastrzeżone.",
+        "SaveBtn": "Zapisz"
+      },
+      "Preferences": {
+        "Name": "Preferencje"
+      }
+    }

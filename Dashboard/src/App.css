@@ -1,0 +1,22 @@
+body:has(#switch:checked) {
+  --font-color: black;
+  --bck-color: rgb(202, 181, 181);
+  --bck-hover: rgb(165, 160, 160);
+  --bck-page: rgb(87, 82, 82);
+  --line-color: rgb(43, 41, 41);
+  color-scheme: light;
+  --bck-elements: rgb(137, 145, 151);
+  --bck-light: rgb(148, 151, 153);
+  --font-light: rgb(29, 56, 56);
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+  background-color: var(--bck-page);
+  margin: 0px;
+  font-family: var(--page-font);
+  overflow: hidden;
+}

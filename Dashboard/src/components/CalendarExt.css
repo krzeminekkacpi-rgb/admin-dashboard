@@ -1,0 +1,145 @@
+.id2 {
+    background-color: var(--bck-elements);
+    width: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    height: 80dvh;
+}
+#id20 {
+    padding: 20px 0px;
+}
+.Add-event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(87, 87, 145), rgb(128, 128, 172));
+    width: 100%;
+    border: 1px solid black;
+}
+.Add-event-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 100%;
+    border: 1px solid black;
+}
+.viss {
+    display: none;
+}
+.text {
+    color: var(--font-color);
+    font-weight: bolder;
+    
+}
+#padd {
+    padding: 10px 20px;
+}
+.Shadow {
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    
+}
+.Add-event-btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.Event-name {
+    padding: 10px 10px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+.Pointer {
+    cursor: pointer;
+}
+.Event-each {
+    background: linear-gradient(to right, rgb(87, 87, 145), rgb(128, 128, 172));
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Upcomming-events {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Big {
+    font-size: 30px;
+}
+.Increase {
+    font-weight: bolder;
+}
+.Event-week {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+.Each-day {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bck-elements);
+    border-radius: 20px;
+    margin-right: 10px;
+    overflow-y: auto;
+    border: 1px solid black;
+    padding: 0px 10px;
+    flex-shrink: 0;
+}
+.Center-text {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    text-shadow: 2px 2px 2px black;
+}
+.Todo-tasks {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(95, 95, 138), rgb(70, 70, 129));
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px black;
+    flex-shrink: 0;
+    border: 1px solid black;
+}
+.Bck-space {
+    background-color: var(--bck-elements);
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid black;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+.text-center {
+    text-align: center;
+}
+.Shrink {
+    flex-shrink: 1;
+    display: flex;
+    min-width: 0px;
+}
+.Margin {
+    margin-right: 10px;
+}
+.Mar {
+    margin-bottom: 10px;
+}
+.Custom-btn {
+    background-color: var(--bck-color);
+    border: 1px solid black;
+}

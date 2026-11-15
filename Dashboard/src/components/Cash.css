@@ -1,0 +1,441 @@
+.Cash-mainboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Cash-data {
+    width: 60%;
+    height: 55%;
+    background-color: var(--bck-elements);
+    border-radius: 25px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    min-height: 505px;
+    margin-bottom: clamp(10px, 1%, 100px);
+}
+
+.Cash-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.Cash-chart {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px sold var(--font-color);
+    flex-direction: column;
+    padding-bottom: 10px;
+    background-color: var(--bck-light);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.Cash-creator, .Spend-creator, .Savings-editor, .Savings-adder {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.White {
+    color: white;
+}
+
+.Capital {
+    text-transform: capitalize;
+}
+
+.Money-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Cash-future {
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    background-color: var(--bck-elements);
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    min-height: 505px;
+}
+
+.Cash-inYears {
+    background-color: var(--bck-light);
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Cash-show-div {
+    width: 45%;
+    height: 30%;
+    background-color: var(--bck-elements);
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: clamp(10px, 1%, 100px);
+}
+
+.Cash-nav-title {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--bck-color);
+    border-bottom: 1px solid black;
+}
+
+.Cash-word {
+    margin: 6px 0px;
+}
+
+.Str {
+    min-width: 30px;
+}
+
+.Cen {
+    text-align: center;
+}
+
+.Cash-range-selector {
+    margin: 0px 10%;
+    margin-top: auto;
+}
+
+input[type='range'] {
+    accent-color: blue;
+}
+
+.Cash-slider-div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.Cash-slider-limit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10%;
+    box-sizing: border-box;
+}
+
+
+.Cash-spendings {
+    display: flex;
+    min-height: 505px;
+    height: 55%;
+    width: 60%;
+    background-color: var(--bck-elements);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.Cash-section-one {
+    width: 75%;
+    height: 100%;
+    background-color: var(--bck-light);
+    display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid black;
+}
+.Cash-section-two {
+    width: 25%;
+    height: 100%;
+    background-color: var(--bck-light);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    border: 1px solid black;
+    border-left: 2px solid black;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.Cash-spendings-year {
+    text-align: center;
+    margin: 0px 0px;
+}
+.Cash-year-title {
+    width: 100%;
+    background-color: var(--bck-elements);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.Cash-sections {
+    height: 65%;
+    display: flex;
+}
+.Cash-layout-one {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cash-layout-two {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+}
+.Cash-barChart {
+    width: 100%;
+    height: 96%;
+}
+.Cash-spend-div {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bck-color);
+    padding: 10px 10%;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+.Marg {
+    margin-right: 5%;
+    text-wrap: wrap;
+    white-space: wrap;
+}
+.Cash-par {
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+.Cash-savings {
+    background-color: var(--bck-elements);
+    width: 39%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    min-height: 505px;
+    border-radius: 25px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+.Cash-piechart {
+    width: 100%;
+    background-color: var(--bck-light);
+    border-radius: 25px;
+    border: 1px solid black;
+}
+.Cash-savings-title {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+.Cash-savings-one {
+    width: 100%;
+    display: flex;
+    height: 50%;
+}
+.Cash-savings-data {
+    width: 50%;
+    background-color: var(--bck-light);
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.Cash-savings-info {
+    display: flex;
+    width: 100%;
+    height: 25%;
+   border: 1px solid black;
+   border-radius: 5px;
+   justify-content: space-around;
+   align-items: center;
+}
+.Cash-savings-input {
+    min-width: 5px;
+    width: 60%;
+    padding: 9px 9px;
+    font-weight: bolder;
+    font-size: 18px;
+    border: 2px dashed indigo;
+    background-color: var(--bck-light);
+}
+.Cash-savings-name {
+    padding: 10px 10px;
+    min-width: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    border: 2px dashed indigo;
+    background-color: var(--bck-light);
+    color: white;
+}
+.Align {
+    justify-content: space-around;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.Text-break {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 5px;
+    text-wrap: wrap;
+    word-break: break-all;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.Block {
+    max-height: 50px;
+    display: flex;
+}
+.Outer-space {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background-color: var(--bck-color);
+}
+.Savings-adder {
+    padding: 10px;
+}
+.Chart-box {
+    width: 30%;
+    min-width: 190px;
+    height: 140px;
+}
+
+
+@container MainBoard (min-width: 2000px) {
+    .Cash-creator, .Spend-creator, .Savings-editor, .Savings-adder, .Increase {
+        font-size: 150%;
+    }
+}
+@container MainBoard (min-width: 2200px) {
+    .Chart-box {
+        height: 40%;
+    }
+}
+@container MainBoard (max-width: 1400px) {
+     .Cash-section-one {
+        overflow-x: auto;
+    }
+}
+
+@container MainBoard (max-width: 1100px) {
+    .Cash-savings-one {
+        flex-direction: column;
+         height: 65%;
+    }
+    .Cash-savings-data {
+        width: 100%;
+    }
+    .Cash-piechart {
+        width: 100%;
+    }
+    .Cash-spendings {
+        min-height: 725px;
+    }
+     .Cash-savings {
+        height: 725px;
+    }
+     .Cash-section-one {
+        overflow-x: auto;
+    }
+}
+
+@container MainBoard (max-width: 800px) {
+    .Cash-future {
+        width: 100%;
+    }
+
+    .Cash-data {
+        width: 100%;
+    }
+    .Cash-spendings {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .Cash-savings {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .Cash-savings-one {
+        flex-direction: row;
+        height: 65%;
+    }
+     .Cash-savings-data {
+        width: 50%;
+        max-height: 1000px;
+    }
+    .Cash-piechart {
+        width: 50%;
+        min-height: 50%;
+    }
+    .Cash-section-one {
+        overflow-x: auto;
+    }
+}
+@container MainBoard (max-width: 600px) {
+    .Cash-savings-one {
+        flex-direction: column;
+        height: 65%;
+    }
+    .Cash-savings-data {
+        width: 100%;
+        max-height: 200px;
+    }
+    .Cash-piechart {
+        width: 100%;
+        min-height: 200px;
+    }
+     .Cash-section-one {
+        overflow-x: auto;
+    }
+}
+

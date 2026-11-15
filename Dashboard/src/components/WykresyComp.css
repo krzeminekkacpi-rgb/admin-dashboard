@@ -1,0 +1,112 @@
+.Candle-chart-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 555px;
+    background-color: var(--bck-elements);
+    border-radius: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    padding-top: 0px;
+    min-height: 555px;
+    margin-bottom: 1%;
+}
+.Candle-main-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    padding: 10px;
+}
+.Candle-name-style {
+    letter-spacing: 20%;
+}
+.Candle-main-section {
+    display: flex;
+    width: 100%;
+    height: 85%;
+}
+.Candle-chart {
+    background-color: var(--bck-light);
+    width: 100%;
+    height: 100%;
+     border: 1px solid black;
+      border-radius: 25px;
+}
+.Candle-chart-data {
+    background-color: var(--bck-light);
+    height: 100%;
+    width: 20%;
+    min-width: 150px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.Candle-select {
+    background-color: rgb(225, 218, 250);
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+.Candle-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  min-width: 100px;
+  z-index: 1;
+  box-shadow: black;
+  max-width: 170px;
+}
+.Candle-image-div {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Candle-dayly-change {
+    display: flex;
+    justify-self: flex-end;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bck-hover);
+    border-radius: 25px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+.Text-align {
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 0px;
+}
+@container MainBoard (max-width: 800px) {
+    .Candle-main-section {
+        flex-direction: column;
+    }
+    .Candle-chart-main {
+        min-height: 1000px;
+        
+    }
+    .Candle-chart {
+        width: 100%;
+    }
+    .Candle-chart-data {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .The-chart {
+        min-width: 500px;
+    }
+}
+@container MainBoard (max-width: 600px) {
+    .Candle-chart {
+        overflow-x: auto;
+ }
+}

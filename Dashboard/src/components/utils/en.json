@@ -1,0 +1,90 @@
+{
+      "Dashboard": {
+        "CurrentLang": "EN",
+        "WelcomeMessage": "Welcome back",
+        "ButtonDaily": "Daily",
+        "ButtonWeekly": "Weekly",
+        "Weekdays": "en-EN",
+        "MarketChanges": "Todays market changes",
+        "MarketGold": "Gold",
+        "MarketSilver": "Silver",
+        "MarketOil": "Oil",
+        "SeeOtherProjects": "See my other projects!",
+        "MaybeStar": "Here you can see my other projects, if you like them give a star!",
+        "Spotify": "Copy"
+      },
+      "Calendar": {
+        "Name": "Calendar",
+        "FirstDescription": "To add a new event click on day name or day number.",
+        "AddEvent": "Add event",
+        "AddWeeklyEvent": "Add weekly event",
+        "EventName": "Event name",
+        "SelectOption": "Select option",
+        "AddBtn": "Add",
+        "RemoveBtn": "Remove",
+        "Events": "Events",
+        "NoEvents": "Curently no events.",
+        "WeeklyEvents": "Weekly Events",
+        "SecondDescription": "Weekly events are repeated every week.",
+        "Monday": "Monday",
+        "Monday-short": "Mon",
+        "Tuesday": "Tuesday",
+        "Tuesday-short": "Tue",
+        "Wednesday": "Wednesday",
+        "Wednesday-short": "Wed",
+        "Thursday": "Thursday",
+        "Thursday-short": "Thu",
+        "Friday": "Friday",
+        "Friday-short": "Fri",
+        "Saturday": "Saturday",
+        "Saturday-short": "Sat",
+        "Sunday": "Sunday",
+        "Sunday-short": "Sun"
+      }, 
+      "Calculator": {
+        "Name": "Calculator"
+      },
+      "Notepad": {
+        "Name": "Notepad"
+      },
+      "Cash": {
+        "Name": "Cash",
+        "AddingDescription": "Cash adding, add some value and the chart will fill.",
+        "AfterYear": "After Year",
+        "After3Years": "3 Years",
+        "After5Years": "5 Years",
+        "After10Years": "10 Years",
+        "After25Years": "25 Years",
+        "After50Years": "50 Years",
+        "LastSpendings": "Last spendings",
+        "AddingSpendings": "Addings missed spendings.",
+        "ChangeBtn": "Change",
+        "Savings": "Reach financial goals!",
+        "ReachGoal": "Reached goal!",
+        "Goal": "Goal:",
+        "Saved": "Saved:",
+        "Percent": "Yours goal",
+        "Edit-savings": "Edit savings.",
+        "Add-savings": "Add savings."
+      },
+      "Charts": {
+        "Name": "Charts",
+        "Today": "Today"
+      },
+      "Settings": {
+        "MainSettings": "Main settings",
+        "SideSettings": "Side settings",
+        "Name": "Settings",
+        "PageLanguage": "Page Language:",
+        "HideMarketChanges": "Hide market changes:",
+        "UnlockCharts": "Unlock charts:",
+        "PageFont": "Page font:",
+        "HideScrollBar": "Hide scrollbars:",
+        "PageOperator": "Page operator:",
+        "Copyright": "© 2026 Kacper Krzemiński. All rights reserved.",
+        "SaveBtn": "Save"
+      },
+      "Preferences": {
+        "Name": "Preferences"
+      }
+    }

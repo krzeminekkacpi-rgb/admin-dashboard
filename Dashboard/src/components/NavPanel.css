@@ -1,0 +1,141 @@
+:root {
+--font-color: rgb(255, 227, 227);
+--font-size: 20px;
+--bck-color: rgb(37, 37, 37);
+--bck-hover: rgb(48, 48, 48);
+--bck-page: black;
+--line-color: rgb(141, 141, 141);
+--bck-elements: rgb(85, 73, 73);
+--bck-light: rgb(61, 61, 65);
+--font-light: rgb(146, 141, 141);
+--page-font: Arial;
+}
+
+.Navpan {
+    background-color: var(--bck-color);
+    width: 15%;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.User-icon {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 20px;
+}
+.Top-section {
+    display: flex;
+    align-items: center;
+}
+.Font-style {
+    color: var(--font-color);
+}
+.Line {
+    width: 100%;
+    background-color: var(--line-color);
+    height: 1px;
+    border: none;
+    min-height: 1px;
+}
+.Nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.Link-font {
+    color: var(--font-color);
+    font-weight: normal;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    white-space: nowrap;
+}
+.Link {
+    border-radius: 20px;
+    display: flex;
+    flex: 1 0 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+.Down-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+.Settings {
+    font-weight: bold;
+}
+.Space {
+    flex: 10 1 0;
+}
+.Link:hover {
+    background-color: var(--bck-hover);
+}
+.Link-font:hover {
+    font-weight: bold;
+    transform: translateX(20px);
+}
+.Vis {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .Navpan {
+    min-width: 300px;
+    }
+}
+@media (max-width: 1000px) {
+    .Navpan {
+        width: 80%;
+        font-size: 12px;
+    }
+}
+@media (max-height: 870px) {
+    .Navpan {
+        font-size: 13px;
+    }
+}
+@media (max-height: 800px) {
+    .Navpan {
+        font-size: 12px;
+    }
+}
+@media (max-height: 700px) {
+    .Navpan {
+        font-size: 10px;
+    }
+}
+@media (max-height: 600px) {
+    .Navpan {
+        font-size: 9px;
+    }
+}
+@media (max-height: 560px) {
+    .Navpan {
+        font-size: 8px;
+    }
+}
+@media (max-height: 500px) {
+    .Navpan {
+        font-size: 6px;
+    }
+}
+@media (max-height: 400px) {
+    .Navpan {
+        font-size: 4px;
+    }
+}
+@media (max-width: 400px) {
+    .Navpan {
+        font-size: 9px;
+    }
+}

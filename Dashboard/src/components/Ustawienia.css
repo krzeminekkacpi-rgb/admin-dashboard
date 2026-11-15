@@ -1,0 +1,137 @@
+
+.Settings-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.Settings-main {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--bck-elements);
+    width: 48%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.Settings-main-div {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    background-color: var(--bck-hover);
+    min-height: 150px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow-x: auto;
+}
+.Settings-side {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--bck-elements);
+    width: 48%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.Settings-side-div {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    background-color: var(--bck-hover);
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow-x: auto;
+}
+.Settings-row {
+    display: flex;
+    height: fit-content;
+    justify-content: start;
+    align-items: center;
+    min-height: 50px;
+}
+.Settings-select {
+    padding: 10px 30px;
+    margin-left: 20px;
+    font-size: 120%;
+}
+#Scroll-hide, #Page-hide, #Market-hide {
+    display: none;
+}
+.Settings-switch {
+    min-width: 80px;
+    border-radius: 20px;
+    border: 1px solid black;
+    min-height: 40px;
+    margin-left: 20px;
+    background-color: var(--bck-elements);
+    position: relative;
+    cursor: pointer;
+}
+.Settings-switch::before {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    top: 2px;
+    left: 2px;
+    transition: all 0.5s ease;
+}
+.Settings-input {
+     padding: 10px 10px;
+    margin-left: 20px;
+    font-size: 120%;
+    max-width: 100px;
+    min-width: 50px;
+    margin-right: 10px;
+}
+.Copyright {
+    color: var(--font-color);
+    justify-content: center;
+}
+#Scroll-hide:checked + .Settings-switch::before, #Page-hide:checked + .Settings-switch::before, #Market-hide:checked + .Settings-switch::before {
+    transform: translateX(40px);
+}
+#Scroll-hide:checked + .Settings-switch, #Page-hide:checked + .Settings-switch, #Market-hide:checked + .Settings-switch {
+    background-color: rgb(74, 74, 126);
+}
+
+@container MainBoard (max-width: 1000px) {
+    .Settings-content {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .Settings-main {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .Settings-side {
+        width: 100%;
+    }
+}
+@container MainBoard (max-width: 700px) {
+    .Settings-content {
+        justify-content: start;
+    }
+    .Settings-select {
+        padding: 5px 15px;
+    }
+     .Settings-main-div {
+        padding: 20px;
+     }
+     .Settings-side-div {
+        padding: 20px;
+     }
+}
