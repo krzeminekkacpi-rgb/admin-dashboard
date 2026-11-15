@@ -3,8 +3,8 @@ import cors from 'cors';
 import axios from 'axios';
 
 const app = express();
-const PORT = process.env.PORT || 3001;
-
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log("Działa na porcie " + PORT));
 // Pozwala frontowi (np. localhost:5173 - Vite) odpytywać ten backend bez błędu CORS
 app.use(cors());
 
