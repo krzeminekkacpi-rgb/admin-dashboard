@@ -9,6 +9,7 @@ import { Kalkulator } from './Pages/Kalkulator';
 import { Kasa } from './Pages/Kasa';
 import { Wykresy } from './Pages/Wykresy';
 import { Settings } from './Pages/Settings';
+import { API_URL } from "./config";
 
 import './App.css'
 
@@ -71,7 +72,7 @@ function App() {
 
         const fetchPogoda = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/weather/warszawa/today')
+                const response = await axios.get(`${API_URL}/api/weather/warszawa/today`)
                 setPogodaDzis(response.data)
             } catch (error) {
                 console.log("fetch error", error);
@@ -87,7 +88,7 @@ function App() {
 
         const fetchPogoda = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/weather/warszawa/week')
+                const response = await axios.get(`${API_URL}/api/weather/warszawa/week`)
                 setPogodaTydzien(response.data)
             } catch (error) {
                 console.log("fetch error", error);
@@ -102,7 +103,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const wait = await axios.get('http://localhost:3001/api/market/btc');
+                const wait = await axios.get(`${API_URL}/api/market/btc`);
                 setBtc(wait.data);
             } catch (error) {
                 console.log(error);
@@ -116,7 +117,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/eth');
+                const response = await axios.get(`${API_URL}/api/market/eth`);
                 setEth(response.data);
             } catch (error) {
                 console.log(error);
@@ -130,7 +131,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/sol');
+                const response = await axios.get(`${API_URL}/api/market/sol`);
                 setSol(response.data);
             } catch (error) {
                 console.log(error);
@@ -144,7 +145,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/gold');
+                const response = await axios.get(`${API_URL}/api/market/gold`);
                 setGold(response.data);
             } catch (error) {
                 console.log(error);
@@ -158,7 +159,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/silver');
+                const response = await axios.get(`${API_URL}/api/market/silver`);
                 setSilver(response.data);
             } catch (error) {
                 console.log(error);
@@ -172,7 +173,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/oil');
+                const response = await axios.get(`${API_URL}/api/market/oil`);
                 setOil(response.data);
             } catch (error) {
                 console.log(error);
@@ -186,7 +187,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/usdpln');
+                const response = await axios.get(`${API_URL}/api/market/usdpln`);
                 setUsd(response.data);
             } catch (error) {
                 console.log(error);
@@ -200,7 +201,7 @@ function App() {
     useEffect(() => {
         const promise = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/market/eurpln');
+                const response = await axios.get(`${API_URL}/api/market/eurpln`);
                 setEur(response.data);
             } catch (error) {
                 console.log(error);

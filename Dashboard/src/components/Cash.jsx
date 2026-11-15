@@ -70,7 +70,7 @@ export function Cash({ hidden, setHidden }) {
     }, [inputSavingsName]);
 
     useEffect(() => {
-        const equationKey = `${cashData.at(-2).Kasa - cashData.at(-1).Kasa}`;
+        const equationKey = `${cashData.at(-2)?.Kasa - cashData.at(-1).Kasa}`;
         if (!flaga.current) {
             flaga.current = true;
             return
